@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  overflow: hidden;
+}
+
+main {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+button {
+  padding: 15px 30px;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+/* h1{
+    /* font-size: 19px; */
+/* } */
+
+h1 {
+  white-space: nowrap;
+}
