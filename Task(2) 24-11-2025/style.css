@@ -41,8 +41,8 @@ section {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-.allReels::-webkit-scrollbar{
-    display: none;
+.allReels::-webkit-scrollbar {
+  display: none;
 }
 
 .reel {
@@ -69,7 +69,6 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
   position: absolute;
   color: white;
-  
 
   bottom: 0;
 }
@@ -118,12 +117,16 @@ section {
   /* transform: translateX(100%); */
   padding: 30px;
   width: 40px;
+  align-items: center;
   gap: 15px;
+  cursor: pointer;
+  /* pointer-events: none; */
 }
 
 .right i {
   font-size: 25px;
   font-weight: 500;
+  /* pointer-events: none; */
 }
 
 .right h6 {
@@ -135,12 +138,47 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* width: 20px; */
+  /* background-color: red; */
 }
-.right h4 {
+
+
+.love {
+  color: red;
+}
+
+
+.right > div h4{
+  pointer-events: none;
+} 
+
+
+
+.right > div h6{
+  pointer-events: none;
+}
+
+
+.mute{
+  background-color: #333;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  
+}
+.mute i{
+  font-size: 15px;
+  pointer-events: none;
 }
 
-
-.love{
-    color: red;
+.mute:active{
+  scale: 0.95;
 }
