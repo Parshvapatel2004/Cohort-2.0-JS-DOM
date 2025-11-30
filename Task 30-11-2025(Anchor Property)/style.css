@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* 
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  anchor-name: --some-anchor;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+}
+.box:hover {
+  anchor-name: --some-anchor;
+}
+
+.red {
+  background-color: rgb(86, 18, 18);
+}
+.green {
+  background-color: rgb(30, 86, 30);
+}
+.blue {
+  background-color: rgb(33, 33, 121);
+}
+
+.anchor {
+  background-color: white;
+  position: absolute;
+  position-anchor: --some-anchor;
+  border-radius: 10px;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  transition: all 0.3s linear;
+  pointer-events: none;
+  mix-blend-mode: difference;
+} */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    /* background-color: gray; */
+  anchor-name: --link;
+}
+
+nav {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.a {
+  text-decoration: none;
+  color: rgb(240, 233, 233);
+  /* background-color: gray; */
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  /* anchor-name: --link; */
+}
+
+.anchor {
+  position: absolute;
+  position-anchor: --link;
+  top: anchor(top);
+  left: anchor(left);
+  bottom: anchor(bottom);
+  right: anchor(right);
+  pointer-events: none;
+  background-color: rgb(0, 0, 0);
+  /* background-color: white; */
+  border-radius: 2px;
+  transition: all 0.5s linear;
+  mix-blend-mode: difference;
+}
+
+.a:hover {
+  anchor-name: --link;
+  color: rgb(255, 255, 255);
+}
